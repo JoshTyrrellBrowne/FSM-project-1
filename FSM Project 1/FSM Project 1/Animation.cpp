@@ -4,6 +4,7 @@
 Animation::Animation()
 {
 	current = new Idle();
+	//delete this;      // i think this stops leak??
 }
 void Animation::idle()
 {

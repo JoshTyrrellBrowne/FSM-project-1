@@ -1,3 +1,8 @@
+/// <summary>
+/// Author: Josh Tyrrell Browne
+/// Date: October 2018
+/// </summary>
+
 #ifdef _DEBUG 
 #pragma comment(lib,"sfml-graphics-d.lib") 
 #pragma comment(lib,"sfml-audio-d.lib") 
@@ -41,9 +46,20 @@ int main() {
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::J))
 		{
 			fsm.jumping();
+			std::this_thread::sleep_for(dura);
 		}
 	
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::C))
+		{
+			fsm.climbing();
+			std::this_thread::sleep_for(dura);
+		}
 
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::I))
+		{
+			fsm.idle();
+			std::this_thread::sleep_for(dura);
+		}
 
 
 
