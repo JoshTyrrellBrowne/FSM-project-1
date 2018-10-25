@@ -30,6 +30,8 @@
 #include "Climbing.h"
 #include "Idle.h"
 #include "Jumping.h"
+#include "Shoveling.h"
+#include "Hammering.h"
 
 
 int main() {
@@ -61,7 +63,17 @@ int main() {
 			std::this_thread::sleep_for(dura);
 		}
 
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+		{
+			fsm.shoveling();
+			std::this_thread::sleep_for(dura);
+		}
 
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::H))
+		{
+			fsm.hammering();
+			std::this_thread::sleep_for(dura);
+		}
 
 
 

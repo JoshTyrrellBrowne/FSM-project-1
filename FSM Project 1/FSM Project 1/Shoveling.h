@@ -1,19 +1,20 @@
 #pragma once
 
+
+
 #include "State.h"
 #include "Climbing.h"
 #include "Idle.h"
-#include "Shoveling.h"
+#include "Jumping.h"
 #include "Hammering.h"
 
-class Jumping : public State
+class Shoveling : public State
 {
 public:
-	Jumping() {};
-	~Jumping() {};
+	Shoveling() {};
+	~Shoveling() {};
 	void idle(Animation* a);
 	void climbing(Animation* a);
-	void shoveling(Animation* a);
+	void jumping(Animation * a);
 	void hammering(Animation* a);
 };
-

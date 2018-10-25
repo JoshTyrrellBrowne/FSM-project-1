@@ -4,7 +4,6 @@
 Animation::Animation()
 {
 	current = new Idle();
-	//delete this;      // i think this stops leak??
 }
 void Animation::idle()
 {
@@ -17,6 +16,16 @@ void Animation::jumping()
 void Animation::climbing()
 {
 	current->climbing(this);
+}
+
+void Animation::shoveling()
+{
+	current->shoveling(this);
+}
+
+void Animation::hammering()
+{
+	current->hammering(this);
 }
 
 

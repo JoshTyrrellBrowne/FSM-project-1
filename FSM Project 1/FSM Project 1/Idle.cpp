@@ -12,3 +12,17 @@ void Idle::climbing(Animation* a)
 	a->setCurrent(new Climbing());
 	delete this;
 }
+
+void Idle::shoveling(Animation * a)
+{
+	std::cout << "Going from Idle to Shoveling" << std::endl;
+	a->setCurrent(new Shoveling());
+	delete this;
+}
+
+void Idle::hammering(Animation * a)
+{
+	std::cout << "Going from Idle to Hammering" << std::endl;
+	a->setCurrent(new Hammering());
+	delete this;
+}

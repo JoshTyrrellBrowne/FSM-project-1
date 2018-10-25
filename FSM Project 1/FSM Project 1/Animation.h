@@ -2,8 +2,6 @@
 //#include "State.h"
 class State; // forward decleration
 
-//#include "Idle.h"
-//class Idle;
 
 class Animation
 {
@@ -17,7 +15,8 @@ public:
 	void idle();
 	void jumping();
 	void climbing();
+	void shoveling();
+	void hammering();
 };
 
 #include "State.h"
-//#include "Idle.h"

@@ -13,3 +13,17 @@ void Jumping::climbing(Animation * a)
 	a->setCurrent(new Climbing());
 	delete this;
 }
+
+void Jumping::shoveling(Animation * a)
+{
+	std::cout << "Cannot go from Jumping to Shoveling" << std::endl;
+	//a->setCurrent(new Shoveling());
+	//delete this;
+}
+
+void Jumping::hammering(Animation * a)
+{
+	std::cout << "Cannot go from Jumping to Hammering" << std::endl;
+	//a->setCurrent(new Hammering());
+	//delete this;
+}
